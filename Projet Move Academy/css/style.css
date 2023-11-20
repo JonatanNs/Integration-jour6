@@ -1,0 +1,282 @@
+/**********************************************
+
+font-family: 'Economica', sans-serif;
+
+Exercice final Move Academy
+===========================
+
+L’ensemble du contenu fait 1200px de large et est centré sur la page du navigateur 
+mais la couleur de fond du pied de page fait toute la largeur de la page du navigateur quelle que soit sa taille.
+
+# COULEURS :
+- textes : #363636
+- violet foncé : #7e4a7c
+- violet moyen : #b878b5
+- violet fond clair (tableau et formulaire) : #ffeefe
+
+# POLICES :
+- par défaut : Open Sans (Google Font)
+- Economica (Google Font) pour titres, nav, boutons
+
+# TAILLE DES POLICES :
+- par défaut : 16px
+- titre : 50px
+- titres rubriques : 40px
+- titres sous-rubriques : 30px
+- menu : 24px
+- boutons "more" : 20px
+- bouton validation formulaire : 25px
+- copyright : 14px
+
+*************************************************/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/******************************
+            HEADER
+******************************/
+.header{
+    text-align: center;
+    
+}
+
+.header > .nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #7e4a7c;
+    
+}
+
+.header > .nav > ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: white;
+    padding: 1em;
+    font-family: 'Economica', sans-serif;
+}
+
+.header > .nav > ul li:hover {
+    color: #7e4a7c;
+    background-color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+/**********************************
+            MAIN
+***********************************/
+
+.container h1{
+    color: #7e4a7c;
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'Economica', sans-serif;
+    font-size: 5rem;
+}
+
+.container h2{
+    color: #b878b5;
+    font-size: 4rem;
+}
+
+.about-the-school{
+    display: flex;
+    flex-direction: row;
+}
+
+#img-about{
+    height: 27em;
+}
+
+
+.about-p{
+    width: 30%;
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+.italic, .p-color-mauve{
+    color: #7e4a7c;
+    font-style: italic;
+}
+
+.why-us{
+    margin-left: 2em;
+}
+
+.why-us h3{
+    font-size: 3rem;
+    color: #7e4a7c;
+    margin-left: 0.5em;
+    font-weight:bold;
+}
+
+.why-us > ul li{
+    list-style-image:url(../img/puce-fleche.png);
+    margin-bottom: 1em;
+}
+/*************************
+        Bouton MORE 
+***************************/
+#btn{
+    padding: 1em;
+    background-color: #7e4a7c;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Economica', sans-serif;
+}
+
+/******************************
+        MAIN > OUR TEACHERS
+*********************************/
+/*.our-teachers{
+    display: flex;
+    flex-direction: row;
+}*/
+
+.our-teachers1{
+    display: flex;
+    flex-direction: row;
+}
+
+.our-teachers2{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-danceur{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-left{
+    margin-right: 1.5em;
+}
+
+h3{
+    font-size: 3rem;
+    color:#7e4a7c;
+}
+
+/****************************
+    MAIN > OUR CLASSES
+******************************/
+
+.horaire{
+    border: 1px solid #7e4a7c;
+    text-align: center;
+    border-collapse: collapse;
+    width: 65em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.horaire thead{
+    background-color: #7e4a7c;
+    color: white;
+}
+
+th, td{
+    border: 1px solid #7e4a7c;
+    width: 10%;
+    padding: 1em;
+}
+.jour-semaine{
+    font-weight: bold;
+}
+
+.jour-sans{
+    background-color: #ffeefe;
+}
+
+/******************************
+        MAIN > Book your lesson
+*****************************/
+.book-your-lesson{
+    margin-bottom: 4em;
+    width: 65em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-form{
+    background-color: #ffeefe;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.last-form{
+    background-color: #ffeefe;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#lastname{
+    margin-right: 5em;
+}
+
+#teacher, #day{
+    margin-right: 5em;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+/*************************************
+        FOOTER 
+*************************************/
+footer{
+    width: 100%;
+    background-color: #444;
+}
+.violet-footer{
+    background-color: #7e4a7c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+
+i{
+    margin: 0.5em;
+}
+
+.p-footer, a, .img-3wa{
+    text-align: center;
+    color: white;
+}
+
+#logo-3{
+    height: 80px;
+    width: 80px;
+}
+
+.p-footer{
+    padding-bottom: 3em;
+}
